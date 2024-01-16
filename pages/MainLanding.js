@@ -23,7 +23,7 @@ const MainLanding = () => {
 
     return (
         <>
-            <section className='flex justify-center'>
+            <section className='flex justify-center h-screen '>
 
                 <motion.div className='w-10/12 mt-16 pl-16' variants={container}
                     initial="hidden"
