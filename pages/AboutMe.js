@@ -1,13 +1,14 @@
 import React from 'react'
+import Image from 'next/image'
 import { motion } from 'framer-motion';
+import img from '../assets/AboutMe.jpg'
 
 const AboutMe = () => {
 
-
-  const underlineVariants = {
-    hidden: { width: '0%' },
-    visible: { width: '100%', transition: { duration: 1 } }
-  }
+  const childVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 }
+  };
 
   const parentVariants = {
     hidden: { opacity: 0 },
@@ -32,7 +33,7 @@ const AboutMe = () => {
 
         </div>
 
-        <div className='w-10/12 p-12 pl-28'>
+        <div className='flex flex-row w-10/12 p-12 pl-28'>
 
           <div className='w-7/12 font-normal text-[#8892B0] text-[17px]'>
 
@@ -81,8 +82,9 @@ const AboutMe = () => {
 
           </div>
 
-          <img>
-          </img>
+          
+          <Image src={img} style={{"border-radius":"93% 7% 49% 51% / 57% 46% 54% 43%"}} className=' outline outline-[#64ffda] outline-offset-8 hover:outline-offset-[16px] duration-100' width={400} alt='me'>
+          </Image>
 
         </div>
 
