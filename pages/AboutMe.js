@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion';
+import SVGComp from '../assets/SVGComp';
 import img from '../assets/AboutMe.jpg'
 
 const AboutMe = () => {
@@ -69,21 +70,45 @@ const AboutMe = () => {
 
             <br></br>
 
-          <div className='grid grid-cols-2 pl-10'>
 
-            <div>Python</div>
-            <div>MLOPS</div>
-            <div>Power BI</div>
-            <div>Scikit-Learn</div>
-            <div>Next JS</div>
-            <div>Tailwind CSS</div>
+            <ul className='grid grid-cols-2 ml-14'>
+
+            <li className='flex items-center gap-3'>
+                <SVGComp />
+                Python
+              </li>
+
+              <li className='flex items-center gap-3'>
+                <SVGComp />
+                MLOPS
+              </li>
+
+              <li className='flex items-center gap-3'>
+                <SVGComp />
+                Power BI
+              </li>
+
+              <li className='flex items-center gap-3'>
+                <SVGComp />
+                Sci-kit Learn
+              </li>
+
+              <li className='flex items-center gap-3'>
+                <SVGComp />
+                Next JS
+              </li>
+
+              <li className='flex items-center gap-3'>
+                <SVGComp />
+                Tailwind CSS
+              </li>
+
+            </ul>
 
           </div>
 
-          </div>
 
-          
-          <Image src={img} style={{"border-radius":"93% 7% 49% 51% / 57% 46% 54% 43%"}} className=' outline outline-[#64ffda] outline-offset-8 hover:outline-offset-[16px] duration-100' width={400} alt='me'>
+          <Image src={img} style={{ "borderRadius": "93% 7% 49% 51% / 57% 46% 54% 43%" }} className=' outline outline-[#64ffda] outline-offset-8 hover:outline-offset-[16px] duration-150' width={400} alt='me'>
           </Image>
 
         </div>
