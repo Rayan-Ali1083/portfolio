@@ -19,7 +19,7 @@ const NavBar = () => {
       };
 
   return (
-    <nav className='w-fit p-4 ml-auto mt-3 pr-14 font-roboto'>
+    <nav className='w-fit p-4 ml-auto mt-3 pr-14 font-mono'>
 
         <motion.ul
           className='text-[#CCD6F6] flex flex-row gap-8 text-[14px] font-medium items-center'
@@ -28,12 +28,12 @@ const NavBar = () => {
           animate="visible"
         >
 
-          {['About', 'Experience', 'Work', 'Contact'].map((item, index) => (
+          {['About','Work', 'Blogs', 'Contact'].map((item, index) => (
 
             <motion.li
               key={item}
               variants={listItemVariants}
-              className='cursor-pointer hover:text-[#64ffda] '
+              className='cursor-pointer hover:text-[#64ffda]'
             >
 
               <span className='text-[#64ffda]'>0{index + 1}. </span>

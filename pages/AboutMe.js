@@ -2,14 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion';
 import SVGComp from '../assets/SVGComp';
+import Heading from '../assets/Heading';
 import img from '../assets/AboutMe.jpg'
 
 const AboutMe = () => {
-
-  const childVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 }
-  };
 
   const parentVariants = {
     hidden: { opacity: 0 },
@@ -18,21 +14,9 @@ const AboutMe = () => {
 
   return (
     <>
-      <motion.section variants={parentVariants} initial="hidden" animate="visible" className='flex flex-col items-center h-screen text-[#CCD6F6]'>
+      <motion.section variants={parentVariants} initial="hidden" animate="visible" className='flex flex-col items-center h-screen'>
 
-        <div className='flex flex-row w-10/12 h-fit mt-7 gap-5 pl-28 items-center'>
-
-          <div className='text-3xl font-bold'>
-
-            <span className='font-roboto text-[#64ffda] text-2xl font-thin'>01. </span>
-
-            About Me
-
-          </div>
-
-          <div className='bg-[#8892b05e] h-[1px] w-56'></div>
-
-        </div>
+        <Heading heading='About Me' number='01. ' />
 
         <div className='flex flex-row w-10/12 p-12 pl-28'>
 
@@ -73,32 +57,32 @@ const AboutMe = () => {
 
             <ul className='grid grid-cols-2 ml-14'>
 
-            <li className='flex items-center gap-3'>
+            <li className='flex items-center gap-3 hover:-translate-y-1 duration-200'>
                 <SVGComp />
                 Python
               </li>
 
-              <li className='flex items-center gap-3'>
+              <li className='flex items-center gap-3 hover:-translate-y-1 duration-200'>
                 <SVGComp />
                 MLOPS
               </li>
 
-              <li className='flex items-center gap-3'>
+              <li className='flex items-center gap-3 hover:-translate-y-1 duration-200'>
                 <SVGComp />
                 Power BI
               </li>
 
-              <li className='flex items-center gap-3'>
+              <li className='flex items-center gap-3 hover:-translate-y-1 duration-200'>
                 <SVGComp />
                 Sci-kit Learn
               </li>
 
-              <li className='flex items-center gap-3'>
+              <li className='flex items-center gap-3 hover:-translate-y-1 duration-200'>
                 <SVGComp />
                 Next JS
               </li>
 
-              <li className='flex items-center gap-3'>
+              <li className='flex items-center gap-3 hover:-translate-y-1 duration-200'>
                 <SVGComp />
                 Tailwind CSS
               </li>
@@ -108,7 +92,7 @@ const AboutMe = () => {
           </div>
 
 
-          <Image src={img} style={{ "borderRadius": "93% 7% 49% 51% / 57% 46% 54% 43%" }} className=' outline outline-[#64ffda] outline-offset-8 hover:outline-offset-[16px] duration-150' width={400} alt='me'>
+          <Image src={img} style={{ "borderRadius": "93% 7% 49% 51% / 57% 46% 54% 43%" }} className='outline outline-[#64ffda] outline-offset-8 hover:outline-offset-[16px] duration-150' width={400} alt='me'>
           </Image>
 
         </div>
