@@ -1,7 +1,8 @@
 import NavBar from './NavBar';
 import MainLanding from './MainLanding';
 import AboutMe from './AboutMe';
-import Projects from './Projects';
+import Projects from './Blogs';
+import Blogs from './Blogs';
 import Bars from './Bars';
 import Transition from './Transition';
 
@@ -25,9 +26,10 @@ export default function Home() {
 
       <Transition delay={0.5} >
 
-        <Projects />
+        <Blogs />
 
       </Transition>
+
 
 
 

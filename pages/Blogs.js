@@ -1,9 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Heading from '../assets/Heading'
-import ProjectCard from '../assets/ProjectCard'
+import BlogCard from '../assets/BlogCard'
 
-const Projects = () => {
+const Blogs = () => {
 
     const parentVariants = {
         hidden: { opacity: 0 },
@@ -14,11 +14,11 @@ const Projects = () => {
     <>
         <motion.section variants={parentVariants} initial="hidden" animate="visible" className='flex flex-col items-center h-screen'>
 
-        <Heading heading="Some Things I've built" number="02." />
+        <Heading heading="Some of My Writings" number="03." />
 
         <div className='flex flex-row w-11/12 h-full p-12 justify-center'>
 
-            <ProjectCard />
+            <BlogCard />
 
         </div>
 
@@ -28,4 +28,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Blogs
