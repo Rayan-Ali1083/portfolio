@@ -9,29 +9,20 @@ const Sidebar = (props) => {
 };
 
   return (
-    <div className="text-white text-sm w-1/6 h-fit p-3">
+    <div className="flex text-white text-sm w-fit h-full p-3 items-center">
       <ul>
         <li
           className={`flex items-center mb-4 cursor-pointer ${
-            props.selectedOption === 'healthcare' ? 'text-[#64ffda] bg-black bg-opacity-10 p-2' : 'p-2'
+            props.selectedOption === 'healthcare' ? 'text-[#64ffda] bg-black bg-opacity-10 p-2' : 'p-2 hover:text-[#64ffda] hover:bg-black hover:bg-opacity-10 text-[#8892B0]'
           }`}
           onClick={() => handleOptionClick('healthcare')}
         >
-          Healthcare - FYP
+          Remote Healthcare - FYP
         </li>
 
         <li
           className={`flex items-center mb-4 cursor-pointer ${
-            props.selectedOption === 'anime' ? 'text-[#64ffda] bg-black bg-opacity-10 p-2' : 'p-2'
-          }`}
-          onClick={() => handleOptionClick('anime')}
-        >
-          Anime Recommender System
-        </li>
-
-        <li
-          className={`flex items-center mb-4 cursor-pointer ${
-            props.selectedOption === 'crop' ? 'text-[#64ffda] bg-black bg-opacity-10 p-2' : 'p-2'
+            props.selectedOption === 'crop' ? 'text-[#64ffda] bg-black bg-opacity-10 p-2' : 'p-2 hover:text-[#64ffda] hover:bg-black hover:bg-opacity-10 text-[#8892B0]'
           }`}
           onClick={() => handleOptionClick('crop')}
         >
@@ -40,7 +31,7 @@ const Sidebar = (props) => {
 
         <li
           className={`flex items-center mb-4 cursor-pointer ${
-            props.selectedOption === 'iot' ? 'text-[#64ffda] bg-black bg-opacity-10 p-2' : 'p-2'
+            props.selectedOption === 'iot' ? 'text-[#64ffda] bg-black bg-opacity-10 p-2' : 'p-2 hover:text-[#64ffda] hover:bg-black hover:bg-opacity-10 text-[#8892B0]'
           }`}
           onClick={() => handleOptionClick('iot')}
         >
@@ -49,7 +40,7 @@ const Sidebar = (props) => {
 
         <li
           className={`flex items-center mb-4 cursor-pointer ${
-            props.selectedOption === 'dis' ? 'text-[#64ffda] bg-black bg-opacity-10 p-2' : 'p-2'
+            props.selectedOption === 'dis' ? 'text-[#64ffda] bg-black bg-opacity-10 p-2' : 'p-2 hover:text-[#64ffda] hover:bg-black hover:bg-opacity-10 text-[#8892B0]'
           }`}
           onClick={() => handleOptionClick('dis')}
         >
@@ -58,7 +49,16 @@ const Sidebar = (props) => {
 
         <li
           className={`flex items-center mb-4 cursor-pointer ${
-            props.selectedOption === 'BI' ? 'text-[#64ffda] bg-black bg-opacity-10 p-2' : 'p-2'
+            props.selectedOption === 'anime' ? 'text-[#64ffda] bg-black bg-opacity-10 p-2' : 'p-2 hover:text-[#64ffda] hover:bg-black hover:bg-opacity-10 text-[#8892B0]'
+          }`}
+          onClick={() => handleOptionClick('anime')}
+        >
+          Anime Recommender System
+        </li>
+        
+        <li
+          className={`flex items-center mb-4 cursor-pointer ${
+            props.selectedOption === 'BI' ? 'text-[#64ffda] bg-black bg-opacity-10 p-2' : 'p-2 hover:text-[#64ffda] hover:bg-black hover:bg-opacity-10 text-[#8892B0]'
           }`}
           onClick={() => handleOptionClick('BI')}
         >

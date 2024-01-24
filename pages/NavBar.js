@@ -19,7 +19,7 @@ const NavBar = () => {
       };
 
   return (
-    <nav className='w-fit p-4 ml-auto mt-3 pr-14 font-mono'>
+    <nav className='relative w-fit p-4 ml-auto mt-3 pr-14 font-mono'>
 
         <motion.ul
           className='text-[#CCD6F6] flex flex-row gap-8 text-[14px] font-medium items-center'
