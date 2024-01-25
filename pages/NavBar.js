@@ -18,8 +18,15 @@ const NavBar = () => {
         visible: { opacity: 1, y: 0 },
       };
 
+      const sections = [
+        {id: '#aboutme', name: 'About Me', index: 0},
+        {id: '#projects', name: 'Projects', index: 1},
+        {id: '#blogs', name: 'Blogs', index: 2}, 
+        {id: '#contact', name: 'Contact', index: 3}
+      ];
+
   return (
-    <nav className='relative w-fit p-4 ml-auto mt-3 pr-14 font-mono'>
+    <nav className='fixed w-fit p-4 right-0 mt-3 pr-14 font-mono'>
 
         <motion.ul
           className='text-[#CCD6F6] flex flex-row gap-8 text-[14px] font-medium items-center'
@@ -28,16 +35,17 @@ const NavBar = () => {
           animate="visible"
         >
 
-          {['About','Work', 'Blogs', 'Contact'].map((item, index) => (
+          {sections.map((section) => (
 
             <motion.li
-              key={item}
+              key={section.index}
               variants={listItemVariants}
               className='cursor-pointer hover:text-[#64ffda]'
             >
-
-              <span className='text-[#64ffda]'>0{index + 1}. </span>
-              {item}
+              <a href={section.id}>
+              <span className='text-[#64ffda]'>0{section.index + 1}. </span>
+              {section.name}
+              </a> 
             </motion.li>
 
           ))}

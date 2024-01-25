@@ -14,7 +14,7 @@ const AboutMe = () => {
 
   return (
     <>
-      <motion.section variants={parentVariants} initial="hidden" animate="visible" className='flex flex-col items-center h-screen'>
+      <motion.section id='aboutme' variants={parentVariants} initial="hidden" animate="visible" className='flex flex-col items-center h-screen'>
 
         <Heading heading='About Me' number='01. ' />
 
@@ -32,12 +32,20 @@ const AboutMe = () => {
 
             <p>
 
-              As of now, I and the 
-              <span className="relative text-[#64ffda] group">
-                 Data Science Lead of Google Student Developer's Club
-                <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#64ffda] transition-width duration-300 group-hover:w-full"></span>
-              </span>
-               and have contributed to projects like <span className='text-[#64ffda]'>IOT Cyber Attack Classification</span>, <span className='text-[#64ffda]'>Healthy/Diseased Cotton Plant Detection</span>, <span className='text-[#64ffda]'>Recommendation System</span>, and <span className='text-[#64ffda]'>Power BI dashboards.</span> Currently pursuing a Bachelor's in Computer Science and Engineering at <span className='text-[#64ffda]'>FAST University,</span> I'm actively seeking opportunities in Data Science and Machine Learning.
+              As of now, I and the
+              {<span className="relative text-[#64ffda] group"> Data Science Lead of Google Student Developer's Club <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#64ffda] transition-width duration-300 group-hover:w-full"></span>
+              </span>}
+              and have contributed to projects like
+
+              {<span className='relative text-[#64ffda] group'> IOT Cyber Attack Classification<span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#64ffda] transition-width duration-300 group-hover:w-full"></span></span>},
+
+              {<span className='relative text-[#64ffda] group'> Cotton Plant Health Detection<span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#64ffda] transition-width duration-300 group-hover:w-full"></span></span>},
+
+              {<span className='relative text-[#64ffda] group'> Recommendation <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#64ffda] transition-width duration-300 group-hover:w-full"></span></span>}, and 
+              
+              {<span className='relative text-[#64ffda] group'> Power BI dashboards. <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#64ffda] transition-width duration-300 group-hover:w-full"></span></span> }
+              
+              Currently pursuing a Bachelor's in Computer Science and Engineering at <span className='relative text-[#64ffda] group'>FAST University<span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#64ffda] transition-width duration-300 group-hover:w-full"></span>,</span> I'm actively seeking opportunities in Data Science and Machine Learning.
 
             </p>
 
@@ -45,7 +53,9 @@ const AboutMe = () => {
 
             <p>
 
-              I love learning new technologies and am currently learning <span className='text-[#64ffda]'>Next.js</span> and <span className='text-[#64ffda]'>Tailwind CSS</span>. Moreover I'm also learning <span className='text-[#64ffda]'>MLOPS</span> and how to <span className='text-[#64ffda]'>deploy machine learning models.</span>
+              I love learning new technologies and am currently learning {<span className='relative text-[#64ffda] group'>Next.js<span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#64ffda] transition-width duration-300 group-hover:w-full"></span></span>} and {<span className='relative text-[#64ffda] group'>Tailwind CSS<span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#64ffda] transition-width duration-300 group-hover:w-full"></span></span>}. 
+              
+              Moreover I'm also learning {<span className='relative text-[#64ffda] group'>MLOPS<span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#64ffda] transition-width duration-300 group-hover:w-full"></span></span>} and how to {<span className='relative text-[#64ffda] group'>deploy machine learning models.<span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#64ffda] transition-width duration-300 group-hover:w-full"></span></span>}
 
             </p>
 

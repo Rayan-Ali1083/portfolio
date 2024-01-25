@@ -12,7 +12,7 @@ const Blogs = () => {
 
   return (
     <>
-        <motion.section variants={parentVariants} initial="hidden" animate="visible" className='flex flex-col items-center h-screen'>
+        <motion.section id='blogs' variants={parentVariants} initial="hidden" animate="visible" className='flex flex-col items-center h-screen'>
 
         <Heading heading="Some of My Writings" number="03." />
 

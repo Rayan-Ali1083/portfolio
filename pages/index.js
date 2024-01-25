@@ -17,7 +17,7 @@ export default function Home() {
 
       <Bars emaildisp="hidden" icons="" position="fixed flex flex-col bottom-0 ml-[2.75rem] items-center gap-8"/>
 
-      <Bars emaildisp="text-[#CCD6F6] rotate-90 mb-20 tracking-widest font-thin text-sm" icons="hidden" position="fixed flex flex-col bottom-0 right-0 -mr-[1rem] items-center gap-8"/>
+      <Bars emaildisp="text-[#CCD6F6] rotate-90 mb-20 tracking-widest font-thin text-sm" icons="hidden" position="font-mono fixed flex flex-col bottom-0 right-0 -mr-[1rem] items-center gap-8"/>
 
       <Transition delay={0.5} >
 
