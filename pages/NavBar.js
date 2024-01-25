@@ -43,7 +43,7 @@ const NavBar = () => {
           ))}
 
           <motion.button
-            className='border-[1px] border-[#64ffda] rounded-sm w-20 plr-3 pt-2 pb-2 text-[#64ffda] font-medium '
+            className='border-[1px] border-[#64ffda] rounded-sm w-20 plr-3 pt-2 pb-2 text-[#64ffda] font-medium'
             variants={buttonVariants}
             whileHover={{ scale: 1.1, backgroundColor: '#64ffda', color: '#0a192f'}}
           >

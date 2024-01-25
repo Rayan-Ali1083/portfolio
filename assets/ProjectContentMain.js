@@ -33,7 +33,7 @@ const ProjectContentMain = (props) => {
 
                 </div>
 
-                <button className='p-5 text-xl text-white rounded-md font-mono hover:shadow-md hover:shadow-white hover:bg-[#64ffda] hover:text-black duration-150 w-fit'><Link target='blank' href={props.link}>Click Here</Link></button>
+                <button className='flex w-fit h-fit text-white rounded-md font-mono hover:shadow-md hover:shadow-white hover:bg-[#64ffda] hover:text-black duration-150'><Link target='blank' className='flex p-5 h-full w-full' href={props.link}>Click Here</Link></button>
 
             </div>
 

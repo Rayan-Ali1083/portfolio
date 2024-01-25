@@ -43,7 +43,7 @@ const MainLanding = () => {
                     
                     </motion.p>
 
-                    <motion.button variants={item} className='p-3 pr-7 pl-7 mt-14 border-2 border-[#64ffda] text-[#64ffda]'>
+                    <motion.button variants={item} className='p-3 pr-7 pl-7 mt-14 rounded-md border-2 border-[#64ffda] text-[#64ffda] hover:border-r-4 hover:border-b-4 hover:-translate-y-10 duration-150'>
                         
                         Get in touch
                     

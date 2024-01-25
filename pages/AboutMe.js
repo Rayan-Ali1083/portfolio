@@ -24,7 +24,7 @@ const AboutMe = () => {
 
             <p>
 
-              Hello! My name is Rayan and I enjoy creating value from raw data. My interest in data science started back in 2020 when I decided to try a course on data science which led me to classify heart patients !
+              Hello! My name is Rayan and I enjoy creating value from raw data. My interest in data science started back in 2020 when I decided to try a course on data science where I classified heart patients !
 
             </p>
 
@@ -32,7 +32,12 @@ const AboutMe = () => {
 
             <p>
 
-              In my journey, I've contributed to projects like <span className='text-[#64ffda]'>IOT Cyber Attack Classification</span>, <span className='text-[#64ffda]'>Healthy/Diseased Cotton Plant Detection</span>, <span className='text-[#64ffda]'>Recommendation System</span>, and <span className='text-[#64ffda]'>Power BI dashboards.</span> Currently pursuing a Bachelor's in Computer Science and Engineering at <span className='text-[#64ffda]'>FAST University,</span> I'm actively seeking opportunities in Data Science and Machine Learning.
+              As of now, I and the 
+              <span className="relative text-[#64ffda] group">
+                 Data Science Lead of Google Student Developer's Club
+                <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#64ffda] transition-width duration-300 group-hover:w-full"></span>
+              </span>
+               and have contributed to projects like <span className='text-[#64ffda]'>IOT Cyber Attack Classification</span>, <span className='text-[#64ffda]'>Healthy/Diseased Cotton Plant Detection</span>, <span className='text-[#64ffda]'>Recommendation System</span>, and <span className='text-[#64ffda]'>Power BI dashboards.</span> Currently pursuing a Bachelor's in Computer Science and Engineering at <span className='text-[#64ffda]'>FAST University,</span> I'm actively seeking opportunities in Data Science and Machine Learning.
 
             </p>
 
@@ -57,7 +62,7 @@ const AboutMe = () => {
 
             <ul className='grid grid-cols-2 ml-14'>
 
-            <li className='flex items-center gap-3 hover:-translate-y-1 duration-200'>
+              <li className='flex items-center gap-3 hover:-translate-y-1 duration-200'>
                 <SVGComp />
                 Python
               </li>

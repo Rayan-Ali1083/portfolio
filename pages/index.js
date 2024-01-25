@@ -3,6 +3,7 @@ import MainLanding from './MainLanding';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
 import Blogs from './Blogs';
+import Contact from './Contact';
 import Bars from './Bars';
 import Transition from './Transition';
 
@@ -18,7 +19,7 @@ export default function Home() {
 
       <Bars emaildisp="text-[#CCD6F6] rotate-90 mb-20 tracking-widest font-thin text-sm" icons="hidden" position="fixed flex flex-col bottom-0 right-0 -mr-[1rem] items-center gap-8"/>
 
-      <Transition delay={0.3} >
+      <Transition delay={0.5} >
 
         <AboutMe />
       
@@ -30,12 +31,18 @@ export default function Home() {
 
       </Transition>
 
-      <Transition delay={0.7} >
+      <Transition delay={0.5} >
 
         <Blogs />
 
       </Transition>
 
+
+      <Transition delay={0.5} >
+
+        <Contact />
+
+      </Transition>
 
 
 
