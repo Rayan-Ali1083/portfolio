@@ -10,13 +10,13 @@ const Projects = () => {
     return (
         <>
 
-            <section id='projects' className='flex flex-col items-center h-screen'>
+            <section id='projects' className='flex flex-col items-center h-screen p-5 lg:p-0'>
 
                 <Heading heading="Some of My Projects" number="02." />
 
-                <div className='flex flex-row w-11/12 h-full p-12 items-center'>
+                <div className='flex flex-row w-11/12 h-full lg:p-12 p-2 items-center border-2'>
                         
-                        <div className='border-[1px] h-96 border-[#8892B0]'></div>
+                        <div className='border-[1px] lg:h-[384px] h-[280px] border-[#8892B0]'></div>
 
                         <SideBar selectedOption={selectedOption} setSelectedOption={setSelectedOption} />
 

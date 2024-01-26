@@ -54,7 +54,7 @@ const Bars = (props) => {
                     rayanali1083@gmail.com
                 </a>
 
-                <div className=" bg-[#CCD6F6] w-[1px] h-24"></div>
+                <div className={props.bar}></div>
             </motion.div>
 
 
