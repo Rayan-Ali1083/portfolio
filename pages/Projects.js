@@ -14,14 +14,14 @@ const Projects = () => {
 
                 <Heading heading="Some of My Projects" number="02." />
 
-                <div className='flex flex-row w-11/12 h-full lg:p-12 p-2 items-center border-2'>
+
+                <div className='flex flex-col lg:flex-row w-11/12 h-5/6 lg:p-12 p-2 items-center'>
                         
-                        <div className='border-[1px] lg:h-[384px] h-[280px] border-[#8892B0]'></div>
+                        <div className='lg:border-[1px] lg:h-[384px] lg:border-[#8892B0]'></div>
 
                         <SideBar selectedOption={selectedOption} setSelectedOption={setSelectedOption} />
 
                         <ProjectContent selectedOption={selectedOption} />
-
 
                 </div>
 

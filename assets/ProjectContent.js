@@ -5,7 +5,7 @@ import SVGComp from './SVGComp'
 const ProjectContent = (props) => {
     return (
         <>
-            <div className='text-[#CCD6F6] h-full w-full'>
+            <div className='flex text-[#CCD6F6] h-full w-full'>
 
                 {props.selectedOption === 'healthcare' && (
 
@@ -119,7 +119,7 @@ const ProjectContent = (props) => {
 
                 {props.selectedOption === 'iot' && (
 
-                    <ProjectContentMain section={'IOT Cyber Attack Classification'} overview={`The Edge-IIoT dataset has achieved recognition as a top 1% document in Web of Science. The project's objective is to develop a model for predicting attack types using 63 specific features such as packet length, protocol, and time. Achieved 96% accuracy using Random Forest and Hyperparameter Tuning.`}
+                    <ProjectContentMain section={'IOT Cyber Attack Classification'} overview={`The Edge-IIoT dataset, recognized in the top 1% in Web of Science, focuses on predicting attack types using 63 features like packet length and protocol. The model, employing Random Forest and Hyperparameter Tuning, attained an impressive 96% accuracy.`}
                     
                     usecases={
                         <ul>
@@ -155,7 +155,7 @@ const ProjectContent = (props) => {
 
                 {props.selectedOption === 'dis' && (
 
-                    <ProjectContentMain section={'Disaster Relief Management System'} overview={'The Disaster Relief Management System is a web application designed to improve the efficiency and effectiveness of disaster response operations and promote collaboration between government bodies and relief organizations. The system is based on a relational database that supports relief work management functionalities.'} 
+                    <ProjectContentMain section={'Disaster Relief Management System'} overview={'The Disaster Relief Management System is a web app enhancing disaster response efficiency, fostering collaboration among government bodies and relief organizations. It utilizes a relational database for robust relief work management.'} 
                     
                     usecases={
                         <ul>
@@ -168,7 +168,7 @@ const ProjectContent = (props) => {
                     }
 
                     impact ={
-                        'Motivation for this project is the current situation in Pakistan. The floods in Pakistan have disrupted the economy and lives of the people affected. The goal of this project is to serve as a monitoring and management system for resources. Resources could be food supplies, medicines and other items. It manages resources of NGOS and gov is the admin'
+                        `This project addresses the aftermath of floods in Pakistan, aiming to efficiently monitor and manage essential resources such as food, medicine, and supplies for NGOs and government entities.`
                     }
 
                     techs={

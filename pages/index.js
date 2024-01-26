@@ -24,13 +24,13 @@ export default function Home() {
 
       </Transition>
 
-      {/* <Transition delay={0.4} >
+      <Transition delay={0.4} >
 
         <Projects />
 
       </Transition>
 
-      <Transition delay={0.4} >
+      {/* <Transition delay={0.4} >
 
         <Blogs />
 
