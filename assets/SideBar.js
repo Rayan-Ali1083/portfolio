@@ -8,22 +8,28 @@ const Sidebar = (props) => {
 
   };
 
+  const dropdownhandleOptionClick = (e) => {
+
+    props.setSelectedOption(e.target.value);
+
+  };
+
   return (
     <>
 
-      <select name="sidebar" id="sidebar" defaultValue={'healthcare'} className='flex mb-auto lg:hidden bg-transparent text-[#64ffda] mr-auto'>
+      <select name="sidebar" id="sidebar" defaultValue={'healthcare'}  className='py-5 flex outline-none mb-auto lg:hidden bg-transparent text-[#64ffda] mr-auto' onChange={dropdownhandleOptionClick}>
 
-        <option value="healthcare" onClick={() => handleOptionClick('healthcare')}>Remote Healthcare - FYP</option>
+        <option className='text-black' value="healthcare">Remote Healthcare - FYP</option>
 
-        <option value="crop" onClick={() => handleOptionClick('crop')}>Crop Health Detection</option>
+        <option className='text-black' value="crop">Crop Health Detection</option>
 
-        <option value="iot" onClick={() => handleOptionClick('iot')}>IoT Device Attack Classification</option>
+        <option className='text-black' value="iot">IoT Device Attack Classification</option>
 
-        <option value="dis" onClick={() => handleOptionClick('dis')}>Disaster Relief Management</option>
+        <option className='text-black' value="dis">Disaster Relief Management</option>
 
-        <option value="anime" onClick={() => handleOptionClick('anime')}>Anime Recommender System</option>
+        <option className='text-black' value="anime">Anime Recommender System</option>
 
-        <option value="BI" onClick={() => handleOptionClick('BI')}>Power BI Dashboards</option>
+        <option className='text-black' value="BI">Power BI Dashboards</option>
 
       </select>
 

@@ -3,6 +3,7 @@ import MainLanding from './MainLanding';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
 import Blogs from './Blogs';
+import Contact from './Contact';
 import Bars from './Bars';
 import Transition from './Transition';
 
@@ -30,13 +31,17 @@ export default function Home() {
 
       </Transition>
 
-      {/* <Transition delay={0.4} >
+      <Transition delay={0.4} >
 
         <Blogs />
 
-      </Transition> */}
+      </Transition>
 
+      <Transition delay={0.4} >
 
+        <Contact />
+
+      </Transition>
 
 
     </>

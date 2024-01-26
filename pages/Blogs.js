@@ -5,24 +5,24 @@ import BlogCard from '../assets/BlogCard'
 
 const Blogs = () => {
 
-    const parentVariants = {
-        hidden: { opacity: 0 },
-        visible: { opacity: 1, transition: { staggerChildren: 0.1, duration: 1.75 } }
-      };
+  const parentVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { staggerChildren: 0.1, duration: 1.75 } }
+  };
 
   return (
     <>
-        <motion.section id='blogs' variants={parentVariants} initial="hidden" animate="visible" className='flex flex-col items-center h-screen'>
+      <motion.section id='blogs' variants={parentVariants} initial="hidden" animate="visible" className='flex flex-col items-center h-fit p-5 lg:p-0'>
 
         <Heading heading="Some of My Writings" number="03." />
 
-        <div className='flex flex-row w-11/12 h-full p-12 justify-center'>
+        <div className='flex flex-row w-11/12 h-full lg:p-12 justify-center'>
 
-            <BlogCard />
+          <BlogCard />
 
         </div>
 
-        </motion.section>
+      </motion.section>
 
     </>
   )
