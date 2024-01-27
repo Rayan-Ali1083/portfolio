@@ -10,7 +10,7 @@ const Projects = () => {
     return (
         <>
 
-            <section id='projects' className='flex flex-col items-center h-screen p-5 lg:p-0'>
+            <section id='projects' className='flex flex-col items-center h-full p-5 lg:p-0'>
 
                 <Heading heading="Some of My Projects" number="02." />
 

@@ -14,11 +14,11 @@ const AboutMe = () => {
 
   return (
     <>
-      <motion.section id='aboutme' variants={parentVariants} initial="hidden" animate="visible" className='flex flex-col items-center h-screen p-5 lg:p-0'>
+      <motion.section id='aboutme' variants={parentVariants} initial="hidden" animate="visible" className='flex flex-col items-center h-fit p-5 lg:p-0'>
 
         <Heading heading='About Me' number='01. ' />
 
-        <div className='flex lg:flex-row lg:w-10/12 lg:p-12 lg:pl-28'>
+        <div className='flex lg:flex-row lg:w-10/12 lg:p-12 lg:pl-28 h-full'>
 
 
           <div className='flex flex-col items-center lg:items-start w-full lg:w-7/12 lg:font-normal text-[#8892B0] lg:text-[17px] text-[13px]'>
@@ -32,7 +32,7 @@ const AboutMe = () => {
 
             <p>
 
-              As of now, I and the
+              As of now, I am the
               {<span className="relative text-[#64ffda] group"> Data Science Lead of Google Student Developer's Club <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#64ffda] transition-width duration-300 group-hover:w-full"></span>
               </span>}
               and have contributed to projects like
@@ -50,18 +50,16 @@ const AboutMe = () => {
             </p>
 
             <br></br>
-            
-          {/* this is for mobile view */}
-          <Image
-  src={img}
-  alt='me'
-  layout="intrinsic"
-  width={150}
-  height={150}
-  objectFit="cover"
-  objectPosition="center"
-  className='lg:hidden outline outline-[#64ffda] outline-offset-[5px] lg:outline-offset-[8px] lg:hover:outline-offset-[16px] hover:outline-offset-[10px] duration-150 hover:animate-pulse rounded-full'
-/>
+
+            {/* this is for mobile view */}
+            <Image
+              src={img}
+              alt='me'
+              width={150}
+              height={150}
+              objectPosition="center"
+              className='lg:hidden outline outline-[#64ffda] outline-offset-[5px] lg:outline-offset-[8px] lg:hover:outline-offset-[16px] hover:outline-offset-[10px] duration-150 hover:animate-pulse rounded-full'
+            />
 
 
 
@@ -75,7 +73,7 @@ const AboutMe = () => {
 
             <br></br>
 
-            <p>
+            <p className='hidden sm:block'>
 
               Here are a few technologies I've been working with recently:
 
@@ -84,7 +82,7 @@ const AboutMe = () => {
             <br></br>
 
 
-            <ul className='grid grid-cols-2 lg:ml-14- lg:w-full'>
+            <ul className='hidden sm:grid grid-cols-2 lg:ml-14- lg:w-full'>
 
               <li className='flex items-center gap-3 hover:-translate-y-1 duration-200'>
                 <SVGComp />

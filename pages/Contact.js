@@ -12,7 +12,7 @@ const Contact = () => {
                     <h1 className='flex font-sans h-fit text-4xl lg:text-5xl text-[#CCD6F6] font-bold justify-center'>Get In Touch</h1>
                     <p className='text-base text-[#8892B0] text-center lg:text-center lg:w-1/2'>Currently I am looking for internship OR part time jobs in the field of Data Science and Machine Learning.Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
 
-                    <button className='static text-sm lg:text-base px-2 py-1 lg:px-5 lg:py-2 font-mono hover:-translate-y-1 mt-5 flex outline outline-[1px] outline-[#64FFDA] text-[#64FFDA] duration-150'><a target='blank' className='flex items-center justify-center h-full w-full' >Say Hello</a></button>
+                    <button className='static text-sm lg:text-base px-2 py-1 lg:px-5 lg:py-2 font-mono hover:-translate-y-1 mt-5 flex outline outline-[1px] outline-[#64FFDA] text-[#64FFDA] duration-150'><a href='mailto:rayanali1083@gmail.com' target='blank' className='flex items-center justify-center h-full w-full' >Say Hello</a></button>
 
                     <div className='flex lg:justify-between lg:w-full lg:mt-10 flex-wrap justify-around gap-4 lg:flex-nowrap'>
 

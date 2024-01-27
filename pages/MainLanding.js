@@ -42,15 +42,15 @@ const MainLanding = () => {
 
                     <motion.p variants={item} className='text-[#8892B0] text-lg text-justify lg:text-lg font-medium lg:w-1/2 mt-8'>
 
-                        I'm a <span className='text-[#64ffda]'>data scientist</span> who analyzes data to find trends and creates Power BI reports. Upcoming projects will include MLOps and Web Development.
+                        I'm a <span className="relative text-[#64ffda] group">data scientist<span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#64ffda] transition-width duration-300 group-hover:w-full"></span></span> who analyzes data to find trends and creates Power BI reports. Upcoming projects will include MLOps and Web Development.
 
                     </motion.p>
 
-                    <motion.button variants={item} className='lg:w-fit p-3 pr-7 pl-7 mt-14 rounded-md border-2 border-[#64ffda] text-[#64ffda] hover:border-r-4 hover:border-b-4 hover:-translate-y-10 duration-100'>
+                    <motion.a href='mailto:rayanali1083@gmail.com' variants={item} className='lg:w-fit p-3 pr-7 pl-7 mt-14 rounded-md border-2 border-[#64ffda] text-[#64ffda] hover:border-r-4 hover:border-b-4 hover:-translate-y-10 duration-100 text-center'>
 
                         Get in touch
 
-                    </motion.button>
+                    </motion.a>
 
                     <Bars emaildisp="block lg:hidden" icons="hidden" position="lg:hidden text-[#CCD6F6] flex w-full tracking-widest justify-center" bar="hidden" />
 

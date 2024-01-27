@@ -32,7 +32,7 @@ const ProjectContentMain = (props) => {
                     </div>
 
                 </div>
-
+                
                 <button className= 'static text-sm lg:text-base px-2 py-1 lg:px-5 lg:py-2 font-mono hover:-translate-y-1 mt-5 flex outline outline-[1px] outline-[#64FFDA] text-[#64FFDA] duration-150'><Link target='blank' className='flex items-center justify-center h-full w-full' href={props.link}>Click Here</Link></button>
 
             </div>
