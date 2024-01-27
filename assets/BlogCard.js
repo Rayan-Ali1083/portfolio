@@ -1,8 +1,8 @@
 import React from 'react'
 import SingleCard from './SingleCard'
 import ObjectDetection from './ObjectDetection.gif'
-import CNN from './cnn.gif'
-import Genetic from './genetic.gif'
+import CNN from './CNN.gif'
+import Genetic from './Genetic.gif'
 import IntroGenetic from './IntroGenetic.gif'
 
 const ProjectsCard = () => {
