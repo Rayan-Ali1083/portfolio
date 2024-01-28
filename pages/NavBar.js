@@ -56,7 +56,7 @@ const NavBar = () => {
             whileHover={{ scale: 1.1, backgroundColor: '#64ffda', color: '#0a192f'}}
           >
 
-            <a href='https://drive.google.com/file/d/1uFy8uEQ9odK_d_3SQcRx5lCgvERZiEo7/view?usp=sharing' target='_blank'>Resume</a>
+            <a href='https://drive.google.com/file/d/13C85u18wQzriuxvGYDyhRm2VPVD-XY4Q/view?usp=sharing' target='_blank'>Resume</a>
           </motion.button>
 
         </motion.ul>

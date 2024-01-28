@@ -5,7 +5,7 @@ import ProjectContent from '../assets/ProjectContent';
 
 const Projects = () => {
 
-    const [selectedOption, setSelectedOption] = useState('healthcare');
+    const [selectedOption, setSelectedOption] = useState('iot');
 
     return (
         <>
