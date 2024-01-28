@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import SVGComp from '../assets/SVGComp';
 import Heading from '../assets/Heading';
 import img from '../assets/AboutMe.png'
+import imgPhone from '../assets/AboutMePhone.png'
 
 const AboutMe = () => {
 
@@ -53,11 +54,10 @@ const AboutMe = () => {
 
             {/* this is for mobile view */}
             <Image
-              src={img}
+              src={imgPhone}
               alt='me'
-              width={150}
-              height={150}
               objectPosition="center"
+              width={200}
               className='lg:hidden outline outline-[#64ffda] outline-offset-[5px] lg:outline-offset-[8px] lg:hover:outline-offset-[16px] hover:outline-offset-[10px] duration-150 hover:animate-pulse rounded-full'
             />
 
