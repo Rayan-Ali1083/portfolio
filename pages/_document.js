@@ -7,10 +7,10 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           {/* Open Graph meta tags */}
-          <meta property="og:title" content="Data Scientist" />
-          <meta property="og:description" content="I hunt patterns in Data" />
-          <meta property="og:image" content="https://photos.google.com/u/1/photo/AF1QipMz5vWIJyKpDf2xEVd9xfxthRN7oIVd2tll_0hc" />
-          <meta property="og:url" content="https://m-rayan.vercel.app/" />
+          <meta name="title" content="Data Scientist" />
+          <meta name="description" content="I hunt patterns in Data" />
+          <meta name="image" content="https://photos.google.com/u/1/photo/AF1QipMz5vWIJyKpDf2xEVd9xfxthRN7oIVd2tll_0hc" />
+          <meta name="url" content="https://m-rayan.vercel.app/" />
         </Head>
         <body>
           <Main />
